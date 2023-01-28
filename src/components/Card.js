@@ -1,36 +1,29 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="p-8 font-Poppins">
+    <div className="p-8 font-Poppins ">
       <div className="">
-        <img
-          className="rounded-lg"
-          src="https://source.unsplash.com/WLxQvbMyfas"
-          alt="image"
-        />
+        <img className="rounded-lg" src={props.imageUrl} alt="image" />
       </div>
-
       <div className="p-2">
         <div className="flex space-x-3 text-xl items-center">
           <h2>
             <span className="text-lg text-red-700 mr-2">
-              <i class="fa-solid fa-location-pin"></i>
+              <i className="fa-solid fa-location-dot"></i>
             </span>
-            Japan
+            {props.location}
           </h2>
           <span className="text-gray-400 underline text-sm">
-            View on Google Maps
+            <a href={props.googleMapsUrl}>View on Google Maps</a>
           </span>
         </div>
         <div>
-          <h1 className="text-3xl mb-2  font-bold">Mount Fuji</h1>
-          <p className="text-sm font-bold ">12 JAN, 2021 - 24 Jan,2021</p>
-          <p className="mt-2">
-            Mount Fuji is the tallest mountain in Japan, standing at 3,776
-            meters (12,380 feet). Mount Fuji is the single most popular tourist
-            site in Japan, for both Japanese and foreign tourists.
+          <h1 className="text-3xl mb-2  font-bold">{props.title}</h1>
+          <p className="text-sm font-bold ">
+            {props.startDate} - {props.endDate}
           </p>
+          <p className="mt-2">{props.description}</p>
         </div>
       </div>
     </div>
