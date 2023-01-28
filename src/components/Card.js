@@ -13,15 +13,20 @@ const Card = () => {
 
       <div className="p-2">
         <div className="flex space-x-3 text-xl items-center">
-          <h2 className="">Japan</h2>
+          <h2>
+            <span className="text-lg text-red-700 mr-2">
+              <i class="fa-solid fa-location-pin"></i>
+            </span>
+            Japan
+          </h2>
           <span className="text-gray-400 underline text-sm">
             View on Google Maps
           </span>
         </div>
         <div>
-          <h1 className="text-3xl mb-3  font-bold">Mount Fuji</h1>
+          <h1 className="text-3xl mb-2  font-bold">Mount Fuji</h1>
           <p className="text-sm font-bold ">12 JAN, 2021 - 24 Jan,2021</p>
-          <p>
+          <p className="mt-2">
             Mount Fuji is the tallest mountain in Japan, standing at 3,776
             meters (12,380 feet). Mount Fuji is the single most popular tourist
             site in Japan, for both Japanese and foreign tourists.
