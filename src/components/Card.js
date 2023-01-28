@@ -2,11 +2,15 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div className="p-8 font-Poppins ">
-      <div className="">
-        <img className="rounded-lg" src={props.imageUrl} alt="image" />
+    <div className="p-8 font-Poppins md:flex md:flex-row md:w-full ">
+      <div className="md:w-1/2">
+        <img
+          className="rounded-lg w-full h-full"
+          src={props.imageUrl}
+          alt="image"
+        />
       </div>
-      <div className="p-2">
+      <div className="p-2 md:w-1/2">
         <div className="flex space-x-3 text-sm items-center">
           <h2 className="font-normal  ">
             <span className="text-sm text-red-700 mr-2 ">
