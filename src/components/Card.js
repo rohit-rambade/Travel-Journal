@@ -7,10 +7,10 @@ const Card = (props) => {
         <img className="rounded-lg" src={props.imageUrl} alt="image" />
       </div>
       <div className="p-2">
-        <div className="flex space-x-3 text-xl items-center">
-          <h2>
-            <span className="text-lg text-red-700 mr-2">
-              <i className="fa-solid fa-location-dot"></i>
+        <div className="flex space-x-3 text-sm items-center">
+          <h2 className="font-normal  ">
+            <span className="text-sm text-red-700 mr-2 ">
+              <i className="fa-solid fa-location-dot "></i>
             </span>
             {props.location}
           </h2>
@@ -19,7 +19,7 @@ const Card = (props) => {
           </span>
         </div>
         <div>
-          <h1 className="text-3xl mb-2  font-bold">{props.title}</h1>
+          <h1 className="text-2xl mb-2  font-bold">{props.title}</h1>
           <p className="text-sm font-bold ">
             {props.startDate} - {props.endDate}
           </p>
